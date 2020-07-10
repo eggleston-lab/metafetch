@@ -23,8 +23,8 @@ for key, value in portals.items():
 
 	"""Unzip"""
 	g_unzip = "gunzip " + key + ".fastq.gz"
-	print(g-unzip)
-	os.command(g-unzip)
+	print(g_unzip)
+	os.command(g_unzip)
 
 	"""Calculate elapsed time"""
 	final = time.perf_counter()
