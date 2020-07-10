@@ -22,7 +22,7 @@ for key, value in portals.items():
 	os.system(command)
 
 	"""Unzip"""
-	g-unzip = "gunzip " + key + ".fastq.gz"
+	g_unzip = "gunzip " + key + ".fastq.gz"
 	print(g-unzip)
 	os.command(g-unzip)
 
