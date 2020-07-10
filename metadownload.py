@@ -3,7 +3,7 @@ portals = {"LakEricontroER36_FD":"/portal/ext-api/downloads/get_tape_file?blocki
 import os
 
 for key, value in portals.items():
-	os.system("curl 'https://signon.jgi.doe.gov/signon/create' --data-urlencode 'login=mbrockley@middlebury.edu' --data-urlencode 'password=FILL IN' -c cookies > /dev/null")
+	os.system("curl 'https://signon.jgi.doe.gov/signon/create' --data-urlencode 'login=mbrockley@middlebury.edu' --data-urlencode 'password=insert here' -c cookies > /dev/null")
 	"""retrieves fasta file"""
 	command = "curl 'https://genome.jgi.doe.gov" + value + "' -b cookies > " + key + ".fastq.gz"
 	print(key)
